@@ -65,6 +65,12 @@ button {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
 .add-do {
     display: flex;
     justify-content: center;
@@ -136,16 +142,25 @@ button {
     gap: 8px;
 }
 
-.tasks-info__created-text {
+.tasks-info__created-text button {
     color: var(--blue);
     font-size: 14px;
     font-weight: 700;
+    background: transparent;
+    border: none;
 }
 
-.tasks-info__completed-text {
+.tasks-list.show-completed .tasks-list__item {
+    display: flex;
+}
+
+
+.tasks-info__completed-text button {
     color: var(--purple);
     font-size: 14px;
     font-weight: 700;
+    background: transparent;
+    border: none;
 }
 
 .tasks-info__counter {
